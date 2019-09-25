@@ -1,0 +1,8 @@
+version: '3.1'
+services:
+  relatorio-web:
+    build: docker
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/code
