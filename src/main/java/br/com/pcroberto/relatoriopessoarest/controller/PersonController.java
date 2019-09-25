@@ -22,7 +22,7 @@ public class PersonController {
     }
 
     @PostMapping("/person")
-    Person newEmployee(@RequestBody Person newPerson) throws Exception{
+    Person newPerson(@RequestBody Person newPerson) throws Exception{
         if (!CpfValidator.isCPF(newPerson.getCpf())) {
             throw new Exception("CPF inválido");
         }
